@@ -1,0 +1,4 @@
+type RootQuery {
+    chip(id: ID!): Chip
+    chips: [Chip!]!
+}

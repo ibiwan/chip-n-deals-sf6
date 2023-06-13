@@ -1,0 +1,10 @@
+type Chip {
+  id: Int!
+  color: String!
+  value: Int!
+}
+
+input CreateChipInput {
+  color: String!
+  value: Int!
+}
