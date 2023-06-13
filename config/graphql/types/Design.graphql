@@ -1,0 +1,16 @@
+type Design {
+  id: Int!
+  name: String!
+  chips: [Chip!]!
+  owner: Player!
+}
+
+input CreateDesignInput {
+  name: String!
+  chips: [CreateOrphanChipInput!]!
+}
+
+input CreateOrphanChipInput {
+  color: String!
+  value: Int!
+}

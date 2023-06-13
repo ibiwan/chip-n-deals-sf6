@@ -1,0 +1,10 @@
+type Player {
+  id: Int!
+  username: String!
+  isAdmin: Boolean!
+}
+
+input CreatePlayerInput {
+  username: String!
+  password: String!
+}

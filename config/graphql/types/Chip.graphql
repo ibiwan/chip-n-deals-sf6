@@ -2,6 +2,7 @@ type Chip {
   id: Int!
   color: String!
   value: Int!
+  design: Design!
 }
 
 input CreateChipInput {

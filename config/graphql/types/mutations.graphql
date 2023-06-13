@@ -1,3 +1,5 @@
 type RootMutation {
   createChip(chip: CreateChipInput!): Chip!
+  createDesign(design:CreateDesignInput!):Design
+  createPlayer(player:CreatePlayerInput!):Player
 }

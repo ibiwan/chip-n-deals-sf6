@@ -19,6 +19,10 @@ class Chip
   #[ORM\Column]
   private int $value;
 
+  #[ORM\ManyToOne(inversedBy: 'chips')]
+  #[ORM\JoinColumn(nullable: false)]
+  private ?Design $design = null;
+
   public function __construct(
     string $color,
     int $value
@@ -54,5 +58,17 @@ class Chip
     $this->value = $value;
 
     return $this;
+  }
+
+  public function getDesign(): ?Design
+  {
+      return $this->design;
+  }
+
+  public function setDesign(?Design $design): static
+  {
+      $this->design = $design;
+
+      return $this;
   }
 }

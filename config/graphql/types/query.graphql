@@ -1,4 +1,9 @@
 type RootQuery {
     chip(id: ID!): Chip
     chips: [Chip!]!
+    design(id:ID!): Design
+    designs: [Design!]!
+    player(id:ID!): Player
+    players:[Player!]!
+    currentPlayer: Player
 }
